@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Filme Luxuoso</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #0f172a;
+      color: #fff;
+    }
+    h1, h2, .lux-title {
+      font-family: 'Playfair Display', serif;
+    }
+    .nav-link:hover {
+      color: #facc15;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+  <!-- Barra de Navegação -->
+  <nav class="bg-black bg-opacity-40 backdrop-blur-md fixed w-full top-0 z-50 py-4 shadow-lg">
+    <ul class="flex justify-center space-x-10 text-white text-lg font-light tracking-wide">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#info" class="nav-link">Informações</a></li>
+      <li><a href="#trailer" class="nav-link">Trailer</a></li>
+      <li><a href="#elenco" class="nav-link">Elenco</a></li>
+      <li><a href="#contato" class="nav-link">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- Seção: Bem-vindo -->
+  <section id="home" class="relative h-screen">
+    <img src="https://images.unsplash.com/photo-1614850523456-00d49865d529?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80"
+         alt="Imagem de fundo elegante"
+         class="absolute inset-0 w-full h-full object-cover brightness-50" />
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+      <h1 class="text-5xl md:text-6xl lux-title text-white drop-shadow-lg">🎬 Bem-vindo ao Universo do Cinema</h1>
+      <p class="text-xl text-gray-200 mt-4 italic">Experimente o luxo da sétima arte</p>
+    </div>
+  </section>
+
+  <!-- Seção: Informações -->
+  <section id="info" class="bg-white bg-opacity-10 backdrop-blur-sm p-10 mt-10 rounded-xl mx-4 md:mx-32 mb-12 shadow-2xl">
+    <h2 class="text-4xl lux-title text-yellow-300 mb-4">ℹ️ Informações</h2>
+    <p class="text-gray-200 text-lg leading-relaxed">
+      Este filme mergulha no coração humano, explorando emoções profundas, escolhas difíceis e laços que desafiam o tempo. Com uma produção impecável, ele é a definição de cinema sofisticado.
+    </p>
+  </section>
+
+  <!-- Seção: Trailer -->
+  <section id="trailer" class="bg-white bg-opacity-10 backdrop-blur-sm p-10 rounded-xl mx-4 md:mx-32 mb-12 shadow-2xl">
+    <h2 class="text-4xl lux-title text-yellow-300 mb-4">🎥 Trailer</h2>
+    <div class="aspect-w-16 aspect-h-9">
+      <iframe class="w-full h-64 rounded-xl shadow-xl" src="https://www.youtube.com/embed/9ItBvH5J6ss" title="Trailer" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Seção: Elenco -->
+  <section id="elenco" class="bg-white bg-opacity-10 backdrop-blur-sm p-10 rounded-xl mx-4 md:mx-32 mb-12 shadow-2xl">
+    <h2 class="text-4xl lux-title text-yellow-300 mb-4">🎭 Elenco</h2>
+    <ul class="text-lg text-gray-200 space-y-2">
+      <li><strong>Ator/Atriz 1:</strong> Nome do protagonista</li>
+      <li><strong>Ator/Atriz 2:</strong> Nome do co-protagonista</li>
+      <li><strong>Diretor:</strong> Nome do diretor</li>
+    </ul>
+  </section>
+
+  <!-- Seção: Contato -->
+  <section id="contato" class="bg-white bg-opacity-10 backdrop-blur-sm p-10 rounded-xl mx-4 md:mx-32 mb-12 shadow-2xl">
+    <h2 class="text-4xl lux-title text-yellow-300 mb-4">📧 Contato</h2>
+    <p class="text-gray-200 text-lg">Entre em contato pelo e-mail: <span class="underline">luxocinema@email.com</span></p>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="text-center py-6 text-gray-400 text-sm">
+    © 2025 | Criado por Kamilly Victória ✨
+  </footer>
+
+</body>
+</html>
